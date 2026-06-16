@@ -64,11 +64,10 @@ for test in tests:
 
 
 test = [{ "input" : {
-    listtosort = [1,3,6,9,10],
-    target = 5
+    "listtosort" = [1,3,6,9,10],
+    "target" = 5
 },
 "output" = 5
-
-
-
 }]
+
+print (linearsearch(**test["input"]))
