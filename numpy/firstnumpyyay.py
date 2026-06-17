@@ -6,5 +6,6 @@ array = array * 2
 print(array.shape)
 mdarray = np.array('A')
 
+
 # 0d array only has one value
 print(mdarray.ndim)

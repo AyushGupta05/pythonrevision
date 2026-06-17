@@ -8,3 +8,4 @@ print(array1.shape)
 print(array2.shape)
 
 print (array1 * array2)
+
