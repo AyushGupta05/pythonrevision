@@ -98,7 +98,7 @@ def optimize (w,b,X,Y, num_iterations = 1000, learning_rate = 0.09):
 
 def predict (w, b, X):
     A = sigmoid(np.dot(w.T,X) + b)
-    Y_prediction = (A > 0.5).astype(int)
+     
     # condition and return as integers. wouldve returned as bool without the int type
     return Y_prediction
 
