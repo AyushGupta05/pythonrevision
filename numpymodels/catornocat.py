@@ -63,7 +63,7 @@ def propogate(w,b,X,Y):
     grads = {
         "dw" : dw,
         "db" : db
-    }
+    }  
     return grads,cost
 
 def optimize (w,b,X,Y, num_iterations = 1000, learning_rate = 0.09):
@@ -131,7 +131,7 @@ def model (x_train, y_train, x_test, y_test, num_iterations = 10000, learning_ra
 
 
     return d
-
+ 
 # does on forward pass and give a prediction
 d = model(train_x_flatten, train_y_flatten, test_x_flatten, test_y_flatten, 2000, 0.005)
 best_train_accuracy = d["train accuracy"]
