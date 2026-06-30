@@ -13,3 +13,5 @@ func2()
 
 # if __name__ == '__main__'
 # main()
+
+# most of the code in a function runs in a main function
