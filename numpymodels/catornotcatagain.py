@@ -42,7 +42,7 @@ print(train_set_x.shape)
 def initialize():
     w = np.random.randn(test_set_x.shape[0],1)  * 0.01
     b = 0.0
-    
+     
     parameters = {"w":w, "b" : b}
     print (w.shape)
     return parameters

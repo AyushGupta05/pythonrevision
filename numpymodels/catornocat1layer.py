@@ -123,4 +123,4 @@ def model(train_data_x,train_data_y,test_data_x, test_data_y,learning_rate,itera
     test_accuracy = 100 - np.mean(np.abs(prediction - test_data_y)) * 100
     print(f"the accuracy is {test_accuracy}")
 
-model(train_set_x,train_set_y,test_set_x,test_set_y,0.05, 1000)
+model(train_set_x,train_set_y,test_set_x,test_set_y,0.05, 1000)  
