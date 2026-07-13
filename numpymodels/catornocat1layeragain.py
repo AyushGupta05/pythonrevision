@@ -30,7 +30,7 @@ def initialize_parameters(X,Y):
     n_y = Y.shape[0]
 
     np.random.seed(5)
-    w1 = np.random.randn(n_h,n_x) *0.01
+    w1 = np.random.randn(n_h,n_x) * 0.01
     b1 = np.zeros((n_h,1))
     w2 = np.random.randn(n_y,n_h)  * 0.01
     b2 = np.zeros((n_y,1))
@@ -84,7 +84,7 @@ def optimize(X,Y, iterations=  1000, learning_rate = 0.07):
     for i in range(iterations):
         cache = forward_propogation(X,params)
         derivatives = backward_propogation(X, Y, params,cache)
-        params["w1"] -= learning_rate * derivatives["dw1"]
+        params["w1"] -= learning_rate * derivatives["dw1"]  
         params["w2"] -= learning_rate * derivatives["dw2"]
         params["b1"] -= learning_rate * derivatives["db1"]
         params["b2"] -= learning_rate * derivatives["db2"]
@@ -111,7 +111,7 @@ def model (train_X,train_Y, test_X, test_Y,iterations,learning_rate):
     train_accuracy = 100 - np.mean(np.abs(Y_prediction - train_Y)) * 100
     print(f"the accuracy is {train_accuracy}")
 
-model(train_set_x, train_set_y, test_set_x, test_set_y,1000,0.02)
+model(train_set_x, train_set_y, test_set_x, test_set_y,500,0.01)
     
 
             

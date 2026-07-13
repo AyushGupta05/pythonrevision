@@ -59,7 +59,7 @@ def forward_propogation(X,params):
 def compute_cost (cache, Y):
     a2 = cache["a2"]
     m = Y.shape[1]
-    cost = -(np.sum(Y * np.log(a2) + (1-Y) * np.log(1-a2)))/m
+    cost =  
 
     return cost
 

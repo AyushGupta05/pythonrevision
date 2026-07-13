@@ -108,7 +108,7 @@ def model (iterations,learning_rate,X_train,Y_train,X_test,Y_test):
     params,costs = optimize (iterations,X_train,Y_train, learning_rate)
     Y_prediction = predict (X_test,params)
     test_accuracy = 100 - np.mean(np.abs(Y_prediction - Y_test)) * 100
-
+    
     print(f"accuracy is {test_accuracy}")
 
-model(1000, 0.06, train_set_x, train_set_y, test_set_x, test_set_y)
+model(1000, 0.009, train_set_x, train_set_y, test_set_x, test_set_y)
