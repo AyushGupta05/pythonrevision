@@ -5,3 +5,4 @@ for i,x in enumerate(nums):
         if i != j and x + y == target:
             print(i,j)
             exit()
+

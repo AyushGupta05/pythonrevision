@@ -112,7 +112,7 @@ def model (x_train, y_train, x_test, y_test, num_iterations = 10000, learning_ra
     y_prediction_test = predict(w,b,x_test)
     y_prediction_train = predict(w, b, x_train)
 
-    train_accuracy = 100 - np.mean(np.abs(y_prediction_train - y_train)) * 100
+    train_accuracy = 100 - np.mean(np.abs(y_prediction - test_set_Y)) * 100
     print("train accuracy:", train_accuracy)
     # substracts and absolute 
     test_accuracy = 100 - np.mean(np.abs(y_prediction_test - y_test)) * 100
