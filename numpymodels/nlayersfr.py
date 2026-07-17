@@ -16,7 +16,7 @@ test_set_y = test_set_y.reshape(1,-1)
 train_set_y = train_set_y.reshape(1,-1)
 test_set_x = test_set_x/255
 train_set_x = train_set_x/255
-
+ 
 def sigmoid(z):
     return 1/(1+np.exp(-z))
 
