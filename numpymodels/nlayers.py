@@ -1,5 +1,6 @@
 import h5py as h5
 import numpy as np 
+import random
 
 test_data = h5.File("test_catvsnoncat.h5","r") 
 train_data = h5.File ("train_catvsnoncat.h5","r")
