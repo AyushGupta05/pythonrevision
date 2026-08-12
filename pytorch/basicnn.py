@@ -2,6 +2,23 @@ import torch
 import torch.nn as nn
 import torch.optim as optim 
 
+torch.cuda.is_available()
+# checks if gpu 
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+model = MyModel().to(device)
+inputs = inputs.to(device)
+targets = target.to(device)
+
+prints(inputs.device)
+# figure out which 
+
+print(next(model.parameters()).device)
+
+# make sure target, input, output and model are on correct device 
+
+
 distances = torch.tensor([[1.0],[2.0],[3.0],[4.0]], dtype = torch.float32)
 times = torch.tensor([[6.96],[12.11],[16.77],[22.21]], dtype = torch.float32)
 
@@ -27,7 +44,7 @@ loss_function = nn.MSELoss()
 #mean squared error lod
 optimizer = optim.SGD(model.parameters(),lr=0.01)
 # sthocastic gradienet descent, wh ich weights and biases to change, learning rate
-
+# . adam also cool
 
 print(distances.shape)
 def dontrunyet():
