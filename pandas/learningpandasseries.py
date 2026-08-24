@@ -10,7 +10,7 @@ series = pd.Series(data,index = index)
 
 #bottom has metadata, and index and normal column 
 
-print(series.loc[3])
+#print(series.loc[3])
 
 # print value at index i 
 

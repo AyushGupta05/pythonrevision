@@ -18,4 +18,6 @@ new_row = pd.DataFrame([{"Name": "Abhinav", "Age" : 28, "Job" : "banker"}], inde
 df = pd.concat([df,new_row])
 
 
-print(df)
+print(df["Age"])
+
+#.loc is useful for selecting rows, columns# df.loc[rows,columns
